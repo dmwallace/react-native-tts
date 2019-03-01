@@ -32,6 +32,8 @@ RCT_EXPORT_MODULE()
         _ducking = false;
     }
 
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord withOptions:AVAudioSessionCategoryOptionDefaultToSpeaker error: nil];
+    
     return self;
 }
 
